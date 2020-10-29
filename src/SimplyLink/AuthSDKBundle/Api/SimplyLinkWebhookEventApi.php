@@ -1,0 +1,57 @@
+<?php
+
+
+namespace SimplyLink\AuthSDKBundle\Api;
+
+
+use GuzzleHttp\RequestOptions;
+use SimplyLink\AuthSDKBundle\Model\Webhook\WebhookEventModel;
+use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+
+class SimplyLinkWebhookEventApi extends SimplyLinkCRUDConnector
+{
+    protected function setApiPath()
+    {
+        return 'https://webhook.' . self::getDomainForEnvironment() . '/api/event';
+    }
+    
+    public function getApiObjectModel()
+    {
+        return new WebhookEventModel();
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public static function getSimplyLinkRequiredScope()
+    {
+        return [
+            'webhook.event'
+        ];
+    }
+    
+    protected function setExclusionStrategyForAction($action)
+    {
+        if($action == self::SL_API_ACTION_UPDATE || $action == self::SL_API_ACTION_CREATE)
+        {
+            return [
+                new SLApiExclusionStrategy(["creatorClientId","createdAt"])
+            ];
+        }
+        
+        return null;
+    }
+    
+    protected function setRequestOptions($action)
+    {
+        if($action == self::SL_API_ACTION_CREATE)
+        {
+            return [
+                RequestOptions::SYNCHRONOUS => false
+            ];
+        }
+        return [];
+    }
+    
+    
+}

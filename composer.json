@@ -1,0 +1,26 @@
+{
+    "name": "simplylink/oauth_sdk",
+    "description": "simplylink oAuth SDK",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ron Fridman",
+            "email": "fridmanron@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/symfony": ">=3.0",
+        "symfony/monolog-bundle": ">=2.8",
+        "doctrine/orm": "^2.5",
+        "doctrine/doctrine-bundle": "^1.6",
+        "guzzlehttp/guzzle": "^6.3",
+        "simplylink/utils": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "SimplyLink": "src/"
+        }
+    }
+}

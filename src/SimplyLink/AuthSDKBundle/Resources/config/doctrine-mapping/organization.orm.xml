@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationModel">
+
+
+        <field name="name" column="name" type="string" length="250" nullable="false" />
+
+        <field name="profilePic" column="profile_pic" type="string" length="250"  nullable="true" />
+
+        <field name="legalEntityName" column="legal_entity_name" type="string" length="250"  nullable="true" />
+
+        <field name="taxId" column="tax_id" type="string" length="50"  nullable="false" />
+
+        <field name="website" column="website"  type="string" length="250" nullable="true" />
+
+        <field name="phone" column="phone"  type="string" length="250"  nullable="true" />
+
+        <field name="billingEmail" column="billing_email"  type="string" length="250"  nullable="true" />
+
+        <field name="shopifyDomain" column="shopify_domain"  type="string" length="250"  nullable="true" />
+
+        <field name="shopifyShopId" column="shopify_shop_id" type="integer"  nullable="true" />
+
+        <field name="users" column="users" type="json_array" />
+
+    </mapped-superclass>
+
+</doctrine-mapping>
