@@ -1,14 +1,14 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\AuthSDKBundle\Model\Organizations\OrganizationModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
 
 
-class SimplyLinkOrganizationsApi extends SimplyLinkCRUDConnector
+class SimplylinkOrganizationsApi extends SimplylinkCRUDConnector
 {
     protected function setApiPath()
     {
@@ -23,7 +23,7 @@ class SimplyLinkOrganizationsApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.organization',

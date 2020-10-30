@@ -1,8 +1,8 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model;
+namespace Simplylink\AuthSDKBundle\Model;
 
-use SimplyLink\UtilsBundle\Utils\GenericDataManager;
+use Simplylink\UtilsBundle\Utils\GenericDataManager;
 use Doctrine\ORM\Mapping as ORM;
 
 
@@ -67,7 +67,7 @@ class SLoAuthAccessToken
     
     /**
      * @param $tokenResponse
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function parseTokenResponse($tokenResponse)
     {

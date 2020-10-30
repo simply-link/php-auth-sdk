@@ -1,8 +1,8 @@
-SimplyLink Auth Server
+Simplylink Auth Server
 ====================
 
 
-# SimplyLink is using RESTful API
+# Simplylink is using RESTful API
 
 A RESTful(Representational state transfer) API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
 

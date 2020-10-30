@@ -1,14 +1,14 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
 use GuzzleHttp\RequestOptions;
-use SimplyLink\AuthSDKBundle\Model\Webhook\WebhookEventModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\AuthSDKBundle\Model\Webhook\WebhookEventModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
 
-class SimplyLinkWebhookEventApi extends SimplyLinkCRUDConnector
+class SimplylinkWebhookEventApi extends SimplylinkCRUDConnector
 {
     protected function setApiPath()
     {
@@ -23,7 +23,7 @@ class SimplyLinkWebhookEventApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'webhook.event'

@@ -1,13 +1,13 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Applications;
+namespace Simplylink\AuthSDKBundle\Model\Applications;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\Generics\CurrenciesModel;
-use SimplyLink\AuthSDKBundle\Model\Generics\PaymentGatewayModel;
-use SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationModel;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\Generics\CurrenciesModel;
+use Simplylink\AuthSDKBundle\Model\Generics\PaymentGatewayModel;
+use Simplylink\AuthSDKBundle\Model\Organizations\OrganizationModel;
 use JMS\Serializer\Annotation as JMS;
-use SimplyLink\AuthSDKBundle\Utils\SLDateTime;
+use Simplylink\AuthSDKBundle\Utils\SLDateTime;
 
 /**
  * Created by PhpStorm.
@@ -15,7 +15,7 @@ use SimplyLink\AuthSDKBundle\Utils\SLDateTime;
  * Date: 20/08/2017
  * Time: 14:22
  */
-class LicenseModel extends BaseSimplyLinkApiObject
+class LicenseModel extends BaseSimplylinkApiObject
 {
     /**
      * @var boolean
@@ -37,7 +37,7 @@ class LicenseModel extends BaseSimplyLinkApiObject
      * @var OrganizationModel
      * @JMS\SerializedName("organization")
      * @JMS\Accessor(getter="getOrganization",setter="setOrganization")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Organizations\OrganizationModel")
      */
     protected $organization;
     
@@ -54,7 +54,7 @@ class LicenseModel extends BaseSimplyLinkApiObject
      * @var ApplicationModel
      * @JMS\SerializedName("application")
      * @JMS\Accessor(getter="getApplication",setter="setApplication")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Applications\ApplicationModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Applications\ApplicationModel")
      */
     protected $application;
     
@@ -62,7 +62,7 @@ class LicenseModel extends BaseSimplyLinkApiObject
      * @var ApplicationPlanInformationModel
      * @JMS\SerializedName("plan")
      * @JMS\Accessor(getter="getPlan",setter="setPlan")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Applications\ApplicationPlanInformationModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Applications\ApplicationPlanInformationModel")
      */
     protected $plan;
     
@@ -79,7 +79,7 @@ class LicenseModel extends BaseSimplyLinkApiObject
      * @var CurrenciesModel
      * @JMS\SerializedName("currency")
      * @JMS\Accessor(getter="getCurrency",setter="setCurrency")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Generics\CurrenciesModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Generics\CurrenciesModel")
      */
     protected $currency;
     
@@ -87,7 +87,7 @@ class LicenseModel extends BaseSimplyLinkApiObject
      * @var \DateTime
      * @JMS\SerializedName("billingOn")
      * @JMS\Accessor(getter="getBillingOn",setter="setBillingOn")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Utils\SLDateTime")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Utils\SLDateTime")
      */
     protected $billingOn;
     
@@ -97,7 +97,7 @@ class LicenseModel extends BaseSimplyLinkApiObject
      * @var PaymentGatewayModel
      * @JMS\SerializedName("paymentGateway")
      * @JMS\Accessor(getter="getPaymentGateway",setter="setPaymentGateway")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Generics\PaymentGatewayModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Generics\PaymentGatewayModel")
      */
     protected $paymentGateway;
     

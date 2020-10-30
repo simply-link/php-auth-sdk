@@ -1,17 +1,17 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Applications\ApplicationPlanInformationModel;
-use SimplyLink\AuthSDKBundle\Model\Applications\FeaturesPlanModel;
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\AuthSDKBundle\Model\Applications\ApplicationPlanInformationModel;
+use Simplylink\AuthSDKBundle\Model\Applications\FeaturesPlanModel;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
 
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionUnexpectedValue;
-use SimplyLink\UtilsBundle\Utils\GenericDataManager;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionUnexpectedValue;
+use Simplylink\UtilsBundle\Utils\GenericDataManager;
 
-class SimplyLinkApplicationPlanInformationApi extends SimplyLinkReadOnlyConnector
+class SimplylinkApplicationPlanInformationApi extends SimplylinkReadOnlyConnector
 {
     
     /**
@@ -21,7 +21,7 @@ class SimplyLinkApplicationPlanInformationApi extends SimplyLinkReadOnlyConnecto
     
     
     /**
-     * SimplyLinkApplicationPlanInformationApi constructor.
+     * SimplylinkApplicationPlanInformationApi constructor.
      *
      * @param integer $appId
      * @param SLoAuthAccessToken $token
@@ -51,7 +51,7 @@ class SimplyLinkApplicationPlanInformationApi extends SimplyLinkReadOnlyConnecto
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.apps'
@@ -61,7 +61,7 @@ class SimplyLinkApplicationPlanInformationApi extends SimplyLinkReadOnlyConnecto
     
     /**
      * @return null|mixed|ApplicationPlanInformationModel
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getBasicPlan()
     {

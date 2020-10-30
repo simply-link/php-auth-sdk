@@ -6,7 +6,7 @@
  * Time: 17:38
  */
 
-namespace SimplyLink\AuthSDKBundle\Utils;
+namespace Simplylink\AuthSDKBundle\Utils;
 
 
 class SLDateTime extends \DateTime

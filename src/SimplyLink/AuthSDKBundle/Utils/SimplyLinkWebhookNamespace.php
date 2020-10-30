@@ -1,10 +1,10 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Utils;
+namespace Simplylink\AuthSDKBundle\Utils;
 
 
-class SimplyLinkWebhookNamespace
+class SimplylinkWebhookNamespace
 {
     const USERS = 'auth.user';
     

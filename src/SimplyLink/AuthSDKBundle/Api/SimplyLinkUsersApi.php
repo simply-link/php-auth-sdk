@@ -1,13 +1,13 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Users\UserModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\AuthSDKBundle\Model\Users\UserModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
 
-class SimplyLinkUsersApi extends SimplyLinkCRUDConnector
+class SimplylinkUsersApi extends SimplylinkCRUDConnector
 {
     protected function setApiPath()
     {
@@ -22,7 +22,7 @@ class SimplyLinkUsersApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.user',
@@ -33,8 +33,8 @@ class SimplyLinkUsersApi extends SimplyLinkCRUDConnector
     
     
     /**
-     * @return array | \SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject | UserModel
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @return array | \Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject | UserModel
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getSelfUser()
     {

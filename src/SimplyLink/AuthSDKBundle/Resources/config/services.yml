@@ -1,50 +1,50 @@
 services:
 #    simplylink_auth_sdk.example:
-#        class: SimplyLink\AuthSDKBundle\Example
+#        class: Simplylink\AuthSDKBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
 
 
     simplylink.oauth.client:
-            class: SimplyLink\AuthSDKBundle\Utils\SLoAuthClient
+            class: Simplylink\AuthSDKBundle\Utils\SLoAuthClient
             arguments: ["%client_id","%client_secret","%return_uri"]
 
 
     simplylink.oauth.sdk:
-            class: SimplyLink\AuthSDKBundle\Utils\SLoAuthConnector
+            class: Simplylink\AuthSDKBundle\Utils\SLoAuthConnector
             arguments: ["@simplylink.oauth.client"]
 
 
 
     simplylink.serilizer.handler.currency:
-        class:     SimplyLink\AuthSDKBundle\Handlers\CurrencySerializer
+        class:     Simplylink\AuthSDKBundle\Handlers\CurrencySerializer
         tags:
             - { name: jms_serializer.subscribing_handler }
 
 
     simplylink.serilizer.handler.country:
-            class:     SimplyLink\AuthSDKBundle\Handlers\CountrySerializer
+            class:     Simplylink\AuthSDKBundle\Handlers\CountrySerializer
             tags:
                 - { name: jms_serializer.subscribing_handler }
 
     simplylink.serilizer.handler.payment_gateway:
-        class:     SimplyLink\AuthSDKBundle\Handlers\PaymentGatewaySerializer
+        class:     Simplylink\AuthSDKBundle\Handlers\PaymentGatewaySerializer
         tags:
             - { name: jms_serializer.subscribing_handler }
 
 
     simplylink.serilizer.handler.application_plan:
-        class:     SimplyLink\AuthSDKBundle\Handlers\ApplicationPlanSerializer
+        class:     Simplylink\AuthSDKBundle\Handlers\ApplicationPlanSerializer
         tags:
             - { name: jms_serializer.subscribing_handler }
 
     simplylink.serilizer.handler.datetime:
-        class:     SimplyLink\AuthSDKBundle\Handlers\DatetimeSerializer
+        class:     Simplylink\AuthSDKBundle\Handlers\DatetimeSerializer
         tags:
             - { name: jms_serializer.subscribing_handler }
 
 
     simplylink.serilizer.handler.organization_role:
-        class:     SimplyLink\AuthSDKBundle\Handlers\OrganizationRolesSerializer
+        class:     Simplylink\AuthSDKBundle\Handlers\OrganizationRolesSerializer
         tags:
             - { name: jms_serializer.subscribing_handler }
 

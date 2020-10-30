@@ -6,7 +6,7 @@
  * Time: 16:35
  */
 
-namespace SimplyLink\AuthSDKBundle\Utils;
+namespace Simplylink\AuthSDKBundle\Utils;
 
 
 use JMS\Serializer\Exclusion\ExclusionStrategyInterface;

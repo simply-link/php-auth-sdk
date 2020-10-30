@@ -1,18 +1,18 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
-use SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationUsersModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument;
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionUnexpectedValue;
-use SimplyLink\UtilsBundle\Utils\SLResponseManager;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\AuthSDKBundle\Model\Organizations\OrganizationUsersModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionUnexpectedValue;
+use Simplylink\UtilsBundle\Utils\SLResponseManager;
 
 
-class SimplyLinkOrganizationUsersApi extends SimplyLinkCRUDConnector
+class SimplylinkOrganizationUsersApi extends SimplylinkCRUDConnector
 {
     
     /**
@@ -21,7 +21,7 @@ class SimplyLinkOrganizationUsersApi extends SimplyLinkCRUDConnector
     private $organizationId;
     
     /**
-     * SimplyLinkOrganizationUsersApi constructor.
+     * SimplylinkOrganizationUsersApi constructor.
      *
      * @param int $organizationId
      * @param SLoAuthAccessToken $token
@@ -84,7 +84,7 @@ class SimplyLinkOrganizationUsersApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.organization',

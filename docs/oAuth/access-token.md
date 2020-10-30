@@ -1,13 +1,13 @@
-SimplyLink Auth Server
+Simplylink Auth Server
 ====================
 
 
 # Access Token:
 
-To integrate securely to SimplyLink resources, you will need to generate Access Tokens. 
+To integrate securely to Simplylink resources, you will need to generate Access Tokens. 
 Access Tokens are unique for a specific Owner (the entity that own the resource)  and to specific Scopes (resource data collections). 
 Tokens are limited for a time frame and should not be generated a new tokens if another token is still useful. 
-Please see the reference for saving tokens and reuse it with SimplyLink Auth SDK. 
+Please see the reference for saving tokens and reuse it with Simplylink Auth SDK. 
 
 
 ### Access Token Endpoint

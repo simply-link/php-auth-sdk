@@ -1,11 +1,11 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Generics;
+namespace Simplylink\AuthSDKBundle\Model\Generics;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
 use JMS\Serializer\Annotation as JMS;
 
-class StatusesModel extends BaseSimplyLinkApiObject
+class StatusesModel extends BaseSimplylinkApiObject
 {
     const Enable = 1;
     const Disable = 2;

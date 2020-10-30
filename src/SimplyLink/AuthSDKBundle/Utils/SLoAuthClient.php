@@ -6,12 +6,12 @@
  * Time: 11:50
  */
 
-namespace SimplyLink\AuthSDKBundle\Utils;
+namespace Simplylink\AuthSDKBundle\Utils;
 
 
 use GuzzleHttp\Client;
-use SimplyLink\AuthSDKBundle\Api\BaseSimplyLinkConnector;
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\AuthSDKBundle\Api\BaseSimplylinkConnector;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
 
 class SLoAuthClient
 {
@@ -152,7 +152,7 @@ class SLoAuthClient
     
     public function getAuthServerBaseUrl()
     {
-        $domain = BaseSimplyLinkConnector::getDomainForEnvironment();
+        $domain = BaseSimplylinkConnector::getDomainForEnvironment();
     
         return 'https://auth.' . $domain;
     }

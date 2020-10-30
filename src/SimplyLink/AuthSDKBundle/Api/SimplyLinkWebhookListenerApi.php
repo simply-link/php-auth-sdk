@@ -1,13 +1,13 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Webhook\WebhookListenerModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\AuthSDKBundle\Model\Webhook\WebhookListenerModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
 
-class SimplyLinkWebhookListenerApi extends SimplyLinkCRUDConnector
+class SimplylinkWebhookListenerApi extends SimplylinkCRUDConnector
 {
     protected function setApiPath()
     {
@@ -22,7 +22,7 @@ class SimplyLinkWebhookListenerApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'webhook.listener'

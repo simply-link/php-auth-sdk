@@ -1,25 +1,25 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
-use SimplyLink\UtilsBundle\Utils\GenericDataManager;
-use SimplyLink\UtilsBundle\Utils\SLBaseUtils;
-use SimplyLink\UtilsBundle\Utils\SLResponseManager;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\UtilsBundle\Utils\GenericDataManager;
+use Simplylink\UtilsBundle\Utils\SLBaseUtils;
+use Simplylink\UtilsBundle\Utils\SLResponseManager;
 
-abstract class SimplyLinkCRUDConnector extends SimplyLinkReadOnlyConnector
+abstract class SimplylinkCRUDConnector extends SimplylinkReadOnlyConnector
 {
     
     /**
-     * @param BaseSimplyLinkApiObject $record
-     * @return BaseSimplyLinkApiObject|array
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @param BaseSimplylinkApiObject $record
+     * @return BaseSimplylinkApiObject|array
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
-    public function createRecord(BaseSimplyLinkApiObject $record)
+    public function createRecord(BaseSimplylinkApiObject $record)
     {
         SLBaseUtils::getLogger()->info('Create record started for object ' . get_class($record));
     
@@ -48,11 +48,11 @@ abstract class SimplyLinkCRUDConnector extends SimplyLinkReadOnlyConnector
     }
     
     /**
-     * @param BaseSimplyLinkApiObject $record
-     * @return array|BaseSimplyLinkApiObject
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @param BaseSimplylinkApiObject $record
+     * @return array|BaseSimplylinkApiObject
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
-    public function updateRecord(BaseSimplyLinkApiObject $record)
+    public function updateRecord(BaseSimplylinkApiObject $record)
     {
         SLBaseUtils::getLogger()->info('Update record started for object ' . get_class($record));
     

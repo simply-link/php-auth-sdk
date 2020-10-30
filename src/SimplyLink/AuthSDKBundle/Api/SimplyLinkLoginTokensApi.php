@@ -1,13 +1,13 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Users\LoginTokenModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\AuthSDKBundle\Model\Users\LoginTokenModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
 
-class SimplyLinkLoginTokensApi extends SimplyLinkCRUDConnector
+class SimplylinkLoginTokensApi extends SimplylinkCRUDConnector
 {
     protected function setApiPath()
     {
@@ -22,7 +22,7 @@ class SimplyLinkLoginTokensApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.login-token'

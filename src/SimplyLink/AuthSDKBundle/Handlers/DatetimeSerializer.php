@@ -6,15 +6,15 @@
  * Time: 15:56
  */
 
-namespace SimplyLink\AuthSDKBundle\Handlers;
+namespace Simplylink\AuthSDKBundle\Handlers;
 
 use JMS\Serializer\Handler\SubscribingHandlerInterface;
 use JMS\Serializer\GraphNavigator;
 use JMS\Serializer\JsonDeserializationVisitor;
 use JMS\Serializer\JsonSerializationVisitor;
 use JMS\Serializer\Context;
-use SimplyLink\AuthSDKBundle\Model\Generics\CurrenciesModel;
-use SimplyLink\AuthSDKBundle\Utils\SLDateTime;
+use Simplylink\AuthSDKBundle\Model\Generics\CurrenciesModel;
+use Simplylink\AuthSDKBundle\Utils\SLDateTime;
 
 class DatetimeSerializer implements SubscribingHandlerInterface
 {

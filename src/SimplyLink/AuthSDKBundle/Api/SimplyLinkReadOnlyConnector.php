@@ -1,19 +1,19 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\UtilsBundle\Utils\SLBaseUtils;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\UtilsBundle\Utils\SLBaseUtils;
 
 
-abstract class SimplyLinkReadOnlyConnector extends BaseSimplyLinkConnector
+abstract class SimplylinkReadOnlyConnector extends BaseSimplylinkConnector
 {
     
     
     /**
      * @param int $recordId
-     * @return BaseSimplyLinkApiObject|BaseSimplyLinkApiObject[]|null|mixed
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @return BaseSimplylinkApiObject|BaseSimplylinkApiObject[]|null|mixed
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getSingleRecord($recordId)
     {
@@ -37,8 +37,8 @@ abstract class SimplyLinkReadOnlyConnector extends BaseSimplyLinkConnector
     
     /**
      * @param array|null $params
-     * @return BaseSimplyLinkApiObject|BaseSimplyLinkApiObject[]|null|mixed
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @return BaseSimplylinkApiObject|BaseSimplylinkApiObject[]|null|mixed
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getRecordsList(array $params = null)
     {

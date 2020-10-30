@@ -1,17 +1,17 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use JMS\Serializer\SerializationContext;
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
-use SimplyLink\UtilsBundle\Utils\GenericDataManager;
-use SimplyLink\UtilsBundle\Utils\SLBaseUtils;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\UtilsBundle\Utils\GenericDataManager;
+use Simplylink\UtilsBundle\Utils\SLBaseUtils;
 
-abstract class BaseSimplyLinkConnector extends SLBaseUtils implements SimplyLinkConnectorTemplate
+abstract class BaseSimplylinkConnector extends SLBaseUtils implements SimplylinkConnectorTemplate
 {
     const SL_MAX_RESULT_LIMIT = 250;
     
@@ -23,7 +23,7 @@ abstract class BaseSimplyLinkConnector extends SLBaseUtils implements SimplyLink
     protected $client;
     
     /**
-     * BaseSimplyLinkConnector constructor.
+     * BaseSimplylinkConnector constructor.
      *
      * @param SLoAuthAccessToken $token
      */
@@ -71,7 +71,7 @@ abstract class BaseSimplyLinkConnector extends SLBaseUtils implements SimplyLink
     
     
     /**
-     * @return BaseSimplyLinkApiObject|mixed
+     * @return BaseSimplylinkApiObject|mixed
      */
     abstract public function getApiObjectModel();
     
@@ -79,11 +79,11 @@ abstract class BaseSimplyLinkConnector extends SLBaseUtils implements SimplyLink
     /**
      * Parse the response and convert it to array of objects
      * @param Response $httpResponse
-     * @param BaseSimplyLinkApiObject $responseModel
-     * @return null|BaseSimplyLinkApiObject|BaseSimplyLinkApiObject[]
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @param BaseSimplylinkApiObject $responseModel
+     * @return null|BaseSimplylinkApiObject|BaseSimplylinkApiObject[]
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
-    public function parseResponse(Response $httpResponse, BaseSimplyLinkApiObject $responseModel)
+    public function parseResponse(Response $httpResponse, BaseSimplylinkApiObject $responseModel)
     {
         if($httpResponse->getStatusCode() < 200 || $httpResponse->getStatusCode() >= 300)
         {
@@ -92,7 +92,7 @@ abstract class BaseSimplyLinkConnector extends SLBaseUtils implements SimplyLink
                 'http_status_code' => $httpResponse->getStatusCode(),
                 'reason' => $httpResponse->getReasonPhrase()
             ];
-            $logger->error('SimplyLink SDK response error (status code invalid)',$context);
+            $logger->error('Simplylink SDK response error (status code invalid)',$context);
                 
             return null;
         }

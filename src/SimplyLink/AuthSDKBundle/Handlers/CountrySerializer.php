@@ -6,13 +6,13 @@
  * Time: 15:56
  */
 
-namespace SimplyLink\AuthSDKBundle\Handlers;
+namespace Simplylink\AuthSDKBundle\Handlers;
 
 use JMS\Serializer\Handler\SubscribingHandlerInterface;
 use JMS\Serializer\GraphNavigator;
 use JMS\Serializer\JsonSerializationVisitor;
 use JMS\Serializer\Context;
-use SimplyLink\AuthSDKBundle\Model\Generics\CountriesModel;
+use Simplylink\AuthSDKBundle\Model\Generics\CountriesModel;
 
 class CountrySerializer implements SubscribingHandlerInterface
 {

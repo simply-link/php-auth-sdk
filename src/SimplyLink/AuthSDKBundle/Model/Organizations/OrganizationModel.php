@@ -1,13 +1,13 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Organizations;
+namespace Simplylink\AuthSDKBundle\Model\Organizations;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\Generics\CountriesModel;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\Generics\CountriesModel;
 use JMS\Serializer\Annotation as JMS;
 
 
-class OrganizationModel extends BaseSimplyLinkApiObject
+class OrganizationModel extends BaseSimplylinkApiObject
 {
     /**
      * @var string
@@ -113,7 +113,7 @@ class OrganizationModel extends BaseSimplyLinkApiObject
      * @var CountriesModel
      * @JMS\SerializedName("addressCountry")
      * @JMS\Accessor(getter="getAddressCountry",setter="setAddressCountry")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Generics\CountriesModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Generics\CountriesModel")
      */
     protected $addressCountry;
     
@@ -121,7 +121,7 @@ class OrganizationModel extends BaseSimplyLinkApiObject
      * @var OrganizationUsersModel[]
      * @JMS\SerializedName("users")
      * @JMS\Accessor(getter="getUsers",setter="setUsers")
-     * @JMS\Type("array<SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationUsersModel>")
+     * @JMS\Type("array<Simplylink\AuthSDKBundle\Model\Organizations\OrganizationUsersModel>")
      */
     protected $users;
     

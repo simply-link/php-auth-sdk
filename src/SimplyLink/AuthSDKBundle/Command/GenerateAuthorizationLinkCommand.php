@@ -1,8 +1,8 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Command;
+namespace Simplylink\AuthSDKBundle\Command;
 
-use SimplyLink\AuthSDKBundle\Utils\SLoAuthConnector;
+use Simplylink\AuthSDKBundle\Utils\SLoAuthConnector;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -17,7 +17,7 @@ class GenerateAuthorizationLinkCommand extends ContainerAwareCommand
     {
         $this
             ->setName('simplylink:auth_sdk:generate_authorization_link')
-            ->setDescription('Generate authorization link  for simplylink authorization server. Use this link to login with SimplyLink.');
+            ->setDescription('Generate authorization link  for simplylink authorization server. Use this link to login with Simplylink.');
     }
 
     /**
@@ -28,7 +28,7 @@ class GenerateAuthorizationLinkCommand extends ContainerAwareCommand
         $SLAuthConnector = $this->getContainer()->get('simplylink.oauth.sdk');
         $authUrl = $SLAuthConnector->getAuthorizationCodeUrl();
     
-        $output->writeln('Use this link to grant access from SimplyLink resource owner');
+        $output->writeln('Use this link to grant access from Simplylink resource owner');
         $output->writeln($authUrl);
         
         return;

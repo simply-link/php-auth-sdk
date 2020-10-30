@@ -1,6 +1,6 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Tests\Controller;
+namespace Simplylink\AuthSDKBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

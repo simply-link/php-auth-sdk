@@ -6,11 +6,11 @@
  * Time: 10:08
  */
 
-namespace SimplyLink\AuthSDKBundle\Model;
+namespace Simplylink\AuthSDKBundle\Model;
 
 use JMS\Serializer\Annotation as JMS;
 
-class BaseSimplyLinkApiObject
+class BaseSimplylinkApiObject
 {
     /**
      * A unique numeric identifier for the resource.
@@ -32,7 +32,7 @@ class BaseSimplyLinkApiObject
     
     /**
      * @param int $id
-     * @return BaseSimplyLinkApiObject|mixed
+     * @return BaseSimplylinkApiObject|mixed
      */
     public function setId($id)
     {

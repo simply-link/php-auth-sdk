@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Utils;
+namespace Simplylink\AuthSDKBundle\Utils;
 
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionRuntime;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionRuntime;
 
 /**
  * Created by PhpStorm.
@@ -77,7 +77,7 @@ class SLoAuthConnector
      *
      * @param string $authorizationCode
      * @return SLoAuthAccessToken
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getAccessTokenFromAuthCode($authorizationCode)
     {
@@ -92,7 +92,7 @@ class SLoAuthConnector
      *
      * @param string $refreshToken
      * @return SLoAuthAccessToken
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getAccessTokenFromRefreshToken($refreshToken)
     {
@@ -108,7 +108,7 @@ class SLoAuthConnector
      *
      * @param array $scope Array of scopes
      * @return SLoAuthAccessToken
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getAccessTokenFromClientCredentials(array $scope = array())
     {
@@ -125,7 +125,7 @@ class SLoAuthConnector
      * @param string $userPassword
      * @param array $scope Array of scopes
      * @return SLoAuthAccessToken
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getAccessTokenFromUserCredentials($userEmail, $userPassword,array $scope = array())
     {
@@ -143,7 +143,7 @@ class SLoAuthConnector
      * @param string $userEmail
      * @param array $scope Array of scopes
      * @return SLoAuthAccessToken
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getAccessTokenFromUsernameOnly($userEmail,array $scope = array())
     {
@@ -160,7 +160,7 @@ class SLoAuthConnector
      *
      * @param array $additionalParams
      * @return SLoAuthAccessToken
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     private function getAccessToken(array $additionalParams)
     {

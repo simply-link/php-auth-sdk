@@ -1,10 +1,10 @@
-SimplyLink Auth Server
+Simplylink Auth Server
 ====================
 
 
 # Users API
 
-SimplyLink allow clients to get access to users information and create new users. 
+Simplylink allow clients to get access to users information and create new users. 
  
 Users information required Access Token authorized by the user (owner) to access the information.
 For more information about [Access Token](../oAuth/access-token.md) and [Authorization Code](../oAuth/authorization-code.md).

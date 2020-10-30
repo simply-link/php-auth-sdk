@@ -1,8 +1,8 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Webhook;
+namespace Simplylink\AuthSDKBundle\Model\Webhook;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -11,7 +11,7 @@ use JMS\Serializer\Annotation as JMS;
  * Date: 20/09/2017
  * Time: 15:07
  */
-class BaseWebhookModel extends BaseSimplyLinkApiObject
+class BaseWebhookModel extends BaseSimplylinkApiObject
 {
     const WEBHOOK_ACTION_CREATE = 'CREATE';
     const WEBHOOK_ACTION_UPDATE = 'UPDATE';

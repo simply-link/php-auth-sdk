@@ -1,11 +1,11 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Generics;
+namespace Simplylink\AuthSDKBundle\Model\Generics;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
 use JMS\Serializer\Annotation as JMS;
 
-class LanguagesModel extends BaseSimplyLinkApiObject
+class LanguagesModel extends BaseSimplylinkApiObject
 {
     
     /**

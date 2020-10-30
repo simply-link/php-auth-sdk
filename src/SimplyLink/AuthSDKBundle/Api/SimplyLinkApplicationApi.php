@@ -1,12 +1,12 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Applications\ApplicationModel;
+use Simplylink\AuthSDKBundle\Model\Applications\ApplicationModel;
 
-class SimplyLinkApplicationApi extends SimplyLinkReadOnlyConnector
+class SimplylinkApplicationApi extends SimplylinkReadOnlyConnector
 {
     
     
@@ -24,7 +24,7 @@ class SimplyLinkApplicationApi extends SimplyLinkReadOnlyConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.apps'
@@ -34,8 +34,8 @@ class SimplyLinkApplicationApi extends SimplyLinkReadOnlyConnector
     /**
      * Get the current Application, detect by the access token
      *
-     * @return \SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject|\SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject[]|null
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @return \Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject|\Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject[]|null
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function getSelfApp()
     {

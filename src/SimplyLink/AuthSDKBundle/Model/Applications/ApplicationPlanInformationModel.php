@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Applications;
+namespace Simplylink\AuthSDKBundle\Model\Applications;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\Generics\CurrenciesModel;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\Generics\CurrenciesModel;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as JMS;
  * Date: 20/08/2017
  * Time: 14:22
  */
-class ApplicationPlanInformationModel extends BaseSimplyLinkApiObject
+class ApplicationPlanInformationModel extends BaseSimplylinkApiObject
 {
     /**
      * @var float
@@ -26,7 +26,7 @@ class ApplicationPlanInformationModel extends BaseSimplyLinkApiObject
      * @var CurrenciesModel
      * @JMS\SerializedName("name")
      * @JMS\Accessor(getter="getCurrency",setter="setCurrency")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Generics\CurrenciesModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Generics\CurrenciesModel")
      */
     protected $currency;
     
@@ -53,7 +53,7 @@ class ApplicationPlanInformationModel extends BaseSimplyLinkApiObject
      * @var FeaturesPlanModel
      * @JMS\SerializedName("plan")
      * @JMS\Accessor(getter="getFeaturesPlan",setter="setFeaturesPlan")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Applications\FeaturesPlanModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Applications\FeaturesPlanModel")
      */
     protected $featuresPlan;
     

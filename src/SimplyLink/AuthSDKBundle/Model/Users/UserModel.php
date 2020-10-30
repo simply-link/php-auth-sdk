@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Users;
+namespace Simplylink\AuthSDKBundle\Model\Users;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\Generics\LanguagesModel;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\Generics\LanguagesModel;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as JMS;
  * Date: 20/08/2017
  * Time: 14:22
  */
-class UserModel extends BaseSimplyLinkApiObject
+class UserModel extends BaseSimplylinkApiObject
 {
     
     /**
@@ -72,7 +72,7 @@ class UserModel extends BaseSimplyLinkApiObject
      * @var UserOrganizationModel[]
      * @JMS\SerializedName("organizations")
      * @JMS\Accessor(getter="getOrganizations",setter="setOrganizations")
-     * @JMS\Type("array<SimplyLink\AuthSDKBundle\Model\Users\UserOrganizationModel>")
+     * @JMS\Type("array<Simplylink\AuthSDKBundle\Model\Users\UserOrganizationModel>")
      */
     protected $organizations = [];
     

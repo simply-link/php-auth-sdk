@@ -1,10 +1,10 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Webhook;
+namespace Simplylink\AuthSDKBundle\Model\Webhook;
 
 use JMS\Serializer\Annotation as JMS;
-use SimplyLink\AuthSDKBundle\Utils\SLDateTime;
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument;
+use Simplylink\AuthSDKBundle\Utils\SLDateTime;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument;
 
 /**
  * Created by PhpStorm.
@@ -53,7 +53,7 @@ class WebhookEventModel extends BaseWebhookModel
      * @var \DateTime
      * @JMS\SerializedName("createdAt")
      * @JMS\Accessor(getter="getCreatedAt",setter="setCreatedAt")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Utils\SLDateTime")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Utils\SLDateTime")
      */
     protected $createdAt;
     

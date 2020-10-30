@@ -1,11 +1,11 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Organizations;
+namespace Simplylink\AuthSDKBundle\Model\Organizations;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
 use JMS\Serializer\Annotation as JMS;
 
-class OrganizationUserInvitationModel extends BaseSimplyLinkApiObject
+class OrganizationUserInvitationModel extends BaseSimplylinkApiObject
 {
     
     /**

@@ -1,14 +1,14 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-interface SimplyLinkConnectorTemplate
+interface SimplylinkConnectorTemplate
 {
     
     /**
      * @return array|null
      */
-    public static function getSimplyLinkRequiredScope();
+    public static function getSimplylinkRequiredScope();
     
 }

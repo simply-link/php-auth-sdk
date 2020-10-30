@@ -1,16 +1,16 @@
 <?php
 
 
-namespace SimplyLink\AuthSDKBundle\Api;
+namespace Simplylink\AuthSDKBundle\Api;
 
 
-use SimplyLink\AuthSDKBundle\Model\Applications\LicenseModel;
-use SimplyLink\AuthSDKBundle\Model\SLoAuthAccessToken;
-use SimplyLink\AuthSDKBundle\Model\Users\UserModel;
-use SimplyLink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionUnexpectedValue;
+use Simplylink\AuthSDKBundle\Model\Applications\LicenseModel;
+use Simplylink\AuthSDKBundle\Model\SLoAuthAccessToken;
+use Simplylink\AuthSDKBundle\Model\Users\UserModel;
+use Simplylink\AuthSDKBundle\Utils\SLApiExclusionStrategy;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionUnexpectedValue;
 
-class SimplyLinkLicenseApi extends SimplyLinkCRUDConnector
+class SimplylinkLicenseApi extends SimplylinkCRUDConnector
 {
     /**
      * @var int
@@ -19,7 +19,7 @@ class SimplyLinkLicenseApi extends SimplyLinkCRUDConnector
     
     
     /**
-     * SimplyLinkLicenseApi constructor.
+     * SimplylinkLicenseApi constructor.
      *
      * @param int $organizationId
      * @param SLoAuthAccessToken $token
@@ -50,7 +50,7 @@ class SimplyLinkLicenseApi extends SimplyLinkCRUDConnector
     /**
      * @inheritDoc
      */
-    public static function getSimplyLinkRequiredScope()
+    public static function getSimplylinkRequiredScope()
     {
         return [
             'auth.license'
@@ -70,8 +70,8 @@ class SimplyLinkLicenseApi extends SimplyLinkCRUDConnector
     
     
     /**
-     * @return \SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject|\SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject[]|null|LicenseModel
-     * @throws \SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
+     * @return \Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject|\Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject[]|null|LicenseModel
+     * @throws \Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument
      */
     public function validateLicense()
     {

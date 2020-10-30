@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Users;
+namespace Simplylink\AuthSDKBundle\Model\Users;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\Generics\LanguagesModel;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\Generics\LanguagesModel;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as JMS;
  * Date: 02/11/2017
  * Time: 15:31
  */
-class LoginTokenModel extends BaseSimplyLinkApiObject
+class LoginTokenModel extends BaseSimplylinkApiObject
 {
     
     /**

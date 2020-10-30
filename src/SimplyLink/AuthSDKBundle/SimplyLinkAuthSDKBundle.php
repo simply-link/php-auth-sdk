@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle;
+namespace Simplylink\AuthSDKBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SimplyLinkAuthSDKBundle extends Bundle
+class SimplylinkAuthSDKBundle extends Bundle
 {
 }

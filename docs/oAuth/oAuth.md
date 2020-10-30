@@ -1,4 +1,4 @@
-SimplyLink Auth Server
+Simplylink Auth Server
 ====================
 
 

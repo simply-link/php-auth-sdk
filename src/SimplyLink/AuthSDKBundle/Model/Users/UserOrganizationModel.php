@@ -1,10 +1,10 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Users;
+namespace Simplylink\AuthSDKBundle\Model\Users;
 
-use SimplyLink\AuthSDKBundle\Model\BaseSimplyLinkApiObject;
-use SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationModel;
-use SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationRolesModel;
+use Simplylink\AuthSDKBundle\Model\BaseSimplylinkApiObject;
+use Simplylink\AuthSDKBundle\Model\Organizations\OrganizationModel;
+use Simplylink\AuthSDKBundle\Model\Organizations\OrganizationRolesModel;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -13,14 +13,14 @@ use JMS\Serializer\Annotation as JMS;
  * Date: 20/08/2017
  * Time: 14:22
  */
-class UserOrganizationModel extends BaseSimplyLinkApiObject
+class UserOrganizationModel extends BaseSimplylinkApiObject
 {
     
     /**
      * @var OrganizationRolesModel
      * @JMS\SerializedName("role")
      * @JMS\Accessor(getter="getRole",setter="setRole")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationRolesModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Organizations\OrganizationRolesModel")
      */
     protected $role;
     
@@ -28,7 +28,7 @@ class UserOrganizationModel extends BaseSimplyLinkApiObject
      * @var OrganizationModel
      * @JMS\SerializedName("organization")
      * @JMS\Accessor(getter="getOrganization",setter="setOrganization")
-     * @JMS\Type("SimplyLink\AuthSDKBundle\Model\Organizations\OrganizationModel")
+     * @JMS\Type("Simplylink\AuthSDKBundle\Model\Organizations\OrganizationModel")
      */
     protected $organization;
     

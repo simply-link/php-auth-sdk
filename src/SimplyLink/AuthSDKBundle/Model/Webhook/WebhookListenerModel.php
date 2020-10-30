@@ -1,9 +1,9 @@
 <?php
 
-namespace SimplyLink\AuthSDKBundle\Model\Webhook;
+namespace Simplylink\AuthSDKBundle\Model\Webhook;
 
 use JMS\Serializer\Annotation as JMS;
-use SimplyLink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument;
+use Simplylink\UtilsBundle\Utils\Exceptions\SLExceptionInvalidArgument;
 
 /**
  * Created by PhpStorm.
