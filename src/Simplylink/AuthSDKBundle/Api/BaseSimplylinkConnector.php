@@ -13,6 +13,7 @@ use Simplylink\UtilsBundle\Utils\SLBaseUtils;
 
 abstract class BaseSimplylinkConnector extends SLBaseUtils implements SimplylinkConnectorTemplate
 {
+    // max result in single api call
     const SL_MAX_RESULT_LIMIT = 250;
     
     const SL_API_ACTION_CREATE = 'CREATE';
